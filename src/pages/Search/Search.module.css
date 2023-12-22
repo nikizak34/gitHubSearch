@@ -1,0 +1,45 @@
+input {
+    outline: none;
+}
+
+.input {
+    width: 448px;
+    height: 33px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-indent: 12px;
+    margin: 50px 0 50px 0;
+}
+
+.input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.repBlock{
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-around;
+}
+
+.repositories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.searchBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
