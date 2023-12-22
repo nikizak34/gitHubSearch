@@ -28,6 +28,10 @@ class FavoritesStore {
     addRepository=(repository: RepRequest)=> {
         this.favorites.unshift(repository);
     }
+    removeRepository=(repository: RepRequest)=> {
+        const index = this.favorites.findIndex(el => el.id === repository.id)
+        if (index !== -1) this.favorites.splice(index, 1)
+    }
 }
 export const favoritesStore = new FavoritesStore();
 

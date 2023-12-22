@@ -10,7 +10,7 @@ import {Loader} from "../../components/Loader/Loader";
 
 export const Search = observer(() => {
     const {searchRepositories, loading, repositories, searchValue, setSearchValue} = repositoriesStore
-    const {favorites, addRepository} = favoritesStore;
+    const {favorites, addRepository,removeRepository} = favoritesStore;
     const debounceValue = useDebounce(searchValue, 500)
     useEffect(() => {
         if (debounceValue) {
@@ -22,7 +22,7 @@ export const Search = observer(() => {
         setSearchValue(e.target.value)
     }
     const mappedFavorite = favorites.map((favorites: RepRequest) => (
-        <Repo isFavorites={true} key={favorites.id} repository={favorites}/>
+        <Repo changeRepository={removeRepository} isFavorites={true} key={favorites.id} repository={favorites}/>
     ))
     const mappedRepo = repositories.map((repository: RepRequest) =>
         <Repo disabled={favorites.includes(repository)} changeRepository={addRepository} key={repository.id}
