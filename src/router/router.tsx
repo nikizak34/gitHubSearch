@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouteObject, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouteObject, RouterProvider} from "react-router-dom";
 import {Search} from "../pages/Search/Search";
 import {RepositoryDetails} from "../pages/RepositoryDetails/RepositoryDetails";
 
@@ -13,7 +13,7 @@ const routes: RouteObject[] = [
     },
 
 ]
-const router = createBrowserRouter([...routes])
+const router = createHashRouter([...routes])
 
 export const Router = () => {
     return <RouterProvider router={router}/>
