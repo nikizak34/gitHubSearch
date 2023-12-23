@@ -20,19 +20,6 @@ input {
 .input:focus {
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
-
-.repBlock{
-    word-wrap: break-word;
-    display: flex;
-    justify-content: space-around;
-}
-
-.repositories {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 .searchBlock{
     display: flex;
     align-items: center;
@@ -40,6 +27,14 @@ input {
     gap: 10px;
 }
 
-.title{
-    margin-bottom: 30px;
+.cancelButton{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.cancelButton:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }

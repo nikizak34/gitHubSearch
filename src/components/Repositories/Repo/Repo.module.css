@@ -9,6 +9,19 @@
     gap: 7px;
 }
 
+.linkBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.linkBox a:hover {
+    transition: .5s;
+    text-decoration: underline;
+}
+
 .copy {
     width: 100%;
 }

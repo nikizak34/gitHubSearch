@@ -1,0 +1,9 @@
+.repBlock{
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title{
+    margin-bottom: 30px;
+}
