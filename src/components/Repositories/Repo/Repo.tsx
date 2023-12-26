@@ -19,7 +19,7 @@ export const Repo = ({repository, changeRepository, isFavorites = false, disable
     return (
         <div className={s.rep}>
             <div className={s.linkBox}>
-                <a href={owner.html_url}>{name}</a>
+                <a target="_blank" rel="noopener noreferrer" href={owner.html_url}>{name}</a>
             </div>
             <div>{owner.html_url}</div>
             <div>Stars: {stargazers_count}</div>

@@ -17,7 +17,7 @@ export const CopyToClipboard: React.FC<Props> = ({text, classname}: Props) => {
         }, 2000);
     };
     return (
-        <button className={`${s.button} ${classname}`} disabled={!text} onClick={handleCopyClick}>
+        <button type={'button'} className={`${s.button} ${classname}`} disabled={!text} onClick={handleCopyClick}>
             {copied ? 'Copied' : 'Copy'}
         </button>
     );
