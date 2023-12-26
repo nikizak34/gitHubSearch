@@ -10,14 +10,14 @@ export const BlockInfo = ({repository}: Props) => {
         name, full_name, stargazers_count, forks,
         open_issues_count, language, description, owner,
     } = repository
-    const {html_url}=owner
+    const {html_url} = owner
 
     return (
         <div className={s.blockInfo}>
             <div>Name: {name}</div>
             <div>Stars: {stargazers_count}</div>
             <div>Forks: {forks}</div>
-            <a href={html_url}>Go to repository</a>
+            <a target="_blank" rel="noopener noreferrer" href={html_url}>Go to repository</a>
             <div>Full Name: {full_name}</div>
             <div>Description: {description}</div>
             <div>Language: {language}</div>
